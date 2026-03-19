@@ -1,6 +1,7 @@
 "use client";
 import React, { Suspense, useState, useEffect } from 'react';
 import Scene from './Scene';
+import TechTicker from './TechTicker';
 import { ShieldCheck, CreditCard, Sparkles } from 'lucide-react';
 
 export default function Hero3D() {
@@ -16,7 +17,7 @@ export default function Hero3D() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen bg-white dark:bg-slate-950 overflow-hidden flex items-center justify-center"> 
+    <section className="relative w-full h-screen bg-slate-50 dark:bg-slate-950 overflow-hidden flex items-center justify-center transition-colors duration-500"> 
       
       {/* 3D Particles Layer */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -24,7 +25,7 @@ export default function Hero3D() {
       </div>
 
       {/* HTML Glass Cards Layer */}
-      <div className="relative z-10 w-full max-w-7xl px-6 pointer-events-none">
+      <div className="relative z-10 w-full max-w-7xl px-6 pointer-events-none mb-32">
         {isMounted && (
           <div className={`transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] transform ${isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -83,6 +84,11 @@ export default function Hero3D() {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Ticker Pinned to Bottom */}
+      <div className="absolute bottom-0 left-0 w-full z-20">
+        <TechTicker />
       </div>
     </section>
   );
