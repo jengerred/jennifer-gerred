@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground:  #1a1538; /* Midnight Purple Base */
+  --brand-pink: #ec4899;   
+  --brand-blue: #7dd3fc;   
+  --brand-purple: #c084fc; 
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground) !important;
+    transition: background-color 0.5s ease;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .btn-tri-glow {
+    @apply relative overflow-hidden transition-all duration-500 shadow-lg flex items-center justify-center;
+    background: linear-gradient(90deg, #ec4899 0%, #7dd3fc 50%, #c084fc 100%);
+    background-size: 200% auto;
+    color: white !important;
+  }
+
+  .btn-tri-glow:hover {
+    background-position: right center;
+    box-shadow: 0 0 25px rgba(192, 132, 252, 0.7);
+    transform: translateY(-2px);
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03); /* Very faint white */
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  /* This line below is the "Magic Fix" for WebGL/Canvas transparency */
+  isolation: isolate; 
+}
+
+/* Ensure the parent of the cards doesn't clip the filter */
+.cards-container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
