@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jennifer Gerred | Digital Solutions & Portfolio
 
-## Getting Started
 
-First, run the development server:
+A high-performance, cinematic portfolio built with **Next.js 15**, **Three.js**, and **Tailwind CSS**. This project showcases a blend of spatial UI design and robust full-stack engineering.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Technical Highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Spatial UX:** An interactive 3D hero section using `react-three-fiber` and custom particle physics.
 
-## Deploy on Vercel
+* **Next-Gen Routing:** Utilizing Next.js 15 App Router for optimized server-side rendering and lightning-fast transitions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Glassmorphism Architecture:** Custom UI components built with Tailwind CSS, featuring backdrop blurs and dynamic border-glows.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Type Safety:** Strictly typed architecture ensuring scalable and bug-free deployments.
+
+
+## 🛠️ The Stack
+
+
+### Frontend & Design
+
+- **Core:** Next.js 15 (React 19)
+
+- **Styling:** Tailwind CSS
+
+- **3D Engine:** Three.js / React Three Fiber
+
+- **Icons:** React Icons (SimpleIcons, Phosphor, DevIcons)
+
+
+### Backend & Logic (Core Competencies)
+
+- **Languages:** C#, Python
+
+- **Frameworks:** .NET Core, Node.js
+
+- **Databases:** MongoDB, SQL Server
+
+- **Integrations:** Stripe API, Biometric Auth Systems
+
+
+## 🏁 Getting Started
+
+
+1. **Clone the repo:**
+
+   ```bash
+
+   git clone [https://github.com/jengerred/jennifer-gerred.git](https://github.com/jengerred/jennifer-gerred.git)
+
+
+2. **Install Dependecies:**
+
+   ```bash
+
+   npm install
+
+
+3. **Run the Development Server:**
+
+  ```bash
+
+   npm run dev
+  ```
+
+
+## 💾 Project Save State (Internal)
+
+
+* **Hero Section:** 3D Name flight and timing perfected (power3.inOut @ 1.8s).
+
+
+* **Tech Ticker:** Seamless glass-morphism loop implemented with pi, di, and si icons.
+
+
+* **Status:** Build errors for next-themes and react-icons resolved.
+
+
+* **Repository:** jengerred/jennifer-gerred
+
+
+### 📄 License
+
+
+Internal use / Portfolio Showcase. Created by Jennifer Gerred.
+
